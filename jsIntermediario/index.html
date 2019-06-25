@@ -4,17 +4,40 @@
         <meta charset="utf-8">
         <script type="text/javascript" src="script.js"></script>
     </head>
-    <body>
+    <body onload="carregou()">
 
-    <!--
-        <button onmousedown="apertouMouse()", onmouseup="soltouMouse()" onmouseover="mouseEmCima()"
-        onmouseout="mouseSaiuDeCima()" onmousemove="moveuMouse()">
-            EU SOU UM BOTÃO
-        </button>
-    -->
-    <!--<button onclick="clicou()">EU SOU UM BOTÃO</button> -->
+        <!--
+            <button onmousedown="apertouMouse()", onmouseup="soltouMouse()" onmouseover="mouseEmCima()"
+            onmouseout="mouseSaiuDeCima()" onmousemove="moveuMouse()">
+                EU SOU UM BOTÃO
+            </button>
+        -->
+        <!--<button onclick="clicou()">EU SOU UM BOTÃO</button>                     -->
 
-        <button oncontextmenu="botaoDireito()">EU SOU UM BOTÃO</button>    
+        <!--<button oncontextmenu="return botaoDireito()">EU SOU UM BOTÃO</button>  -->
+
+        <!--<button ondblclick="clickDuplo()">EU SOU UM BOTÃO</button>              -->
+
+        <!--<input type="text" onkeydown="apertouTecla(event)" />                   -->
+
+        <!--<input type="text" onkeyup="apertouTecla(event)" />                     -->
+
+        <!--<input type="text" onkeypress="apertouTecla(event)" />                  -->
+
+        <!--<input type="text" onkeyup="apertouTecla(event)" />                     -->
+
+        <form method="POST">
+            <input type="text" name="nome" /><br><br>
+
+            <select name="cidade" onchange="mudouOpcao(this)">
+                <option>São Paulo</option>
+                <option>Rio de Janeiro</option>
+                <option>Belo Horizonte</option>
+                <option>Recife</option>
+            </select><br><br>
+
+            <input type="submit" value="Enviar" />
+        </form>
 
     </body>
 </html>
