@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style type="text/css">
+        .bola {
+            width: 50px;
+            height: 50px;
+            background-color: #000000;
+            border-radius: 25px;
+            position: absolute;
+        }
+        </style>
+        
         <meta charset="utf-8">
         <script type="text/javascript" src="script.js"></script>
+
     </head>
-    <body onload="carregou()">
+    <!--<body onload="iniciar()">-->
+    <body>    
 
         <!--
             <button onmousedown="apertouMouse()", onmouseup="soltouMouse()" onmouseover="mouseEmCima()"
@@ -26,8 +38,14 @@
 
         <!--<input type="text" onkeyup="apertouTecla(event)" />                     -->
 
-        <form method="POST">
-            <input type="text" name="nome" /><br><br>
+        <!--
+                        --------------
+                        --FORMULARIO--
+                        --------------
+                        
+                        
+            <form method="POST">
+            <input type="text" name="nome" onfocus="focou()" onblur="desfocou()"/><br><br>
 
             <select name="cidade" onchange="mudouOpcao(this)">
                 <option>São Paulo</option>
@@ -38,6 +56,21 @@
 
             <input type="submit" value="Enviar" />
         </form>
+        -->
+
+        <!--
+            ---------------------------
+            --VALIDAÇÃO DE FORMULÁRIO--
+            ---------------------------
+        -->
+
+        <form method="POST">
+            Digite um número de 2 algarismos:<br/>
+            <input type="text" name="numero"/><br/><br/>
+
+            <input type="submit" value="Enviar" >
+        </form>
+        
 
     </body>
 </html>
